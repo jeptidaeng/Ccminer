@@ -1,4 +1,4 @@
-#Veruscoin.sh
+# veruscoin.sh
 sudo apt update
 ewget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
 tar xf hellminer_cpu_linux.tar.gz
