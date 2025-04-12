@@ -7,10 +7,10 @@ yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
-wget wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4 
-wget https://github.com/rdsp87/dero-stb/raw/main/ccminer -4
-wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/veruscoin.sh
-chmod +x ccminer veruscoin.sh
+wget https://github.com/rdsp87/dero-stb/raw/main/ccminer -4 
+wget https://github.com/jeptidaeng/ccminer-termux/main/config.json
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
+chmod +x ccminer config.json start.sh
 echo "  => done."
 	else
 		exit 1
