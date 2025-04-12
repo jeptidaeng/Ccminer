@@ -1,6 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
 #!/bin/bash
 
-mine_verus() {
+verus() {
 # Mining Algorithm
 ALGO=verus
 
@@ -23,4 +24,4 @@ THR=8
 clear
 ./ccminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
 }
-mine_verus
+verus
