@@ -8,7 +8,7 @@ yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/ccminer -4
-wget https://github.com/jeptidaeng/ccminer-termux/raw/main/lib.deb -4
+wget https://github.com/jeptidaeng/ccminer-termux/raw/main/lib.deb -4 pkg -l lib.deb
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/veruscoin.sh
 chmod +x ccminer veruscoin.sh
 echo "  => done."
