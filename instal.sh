@@ -28,6 +28,6 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/ccminer; ./start.sh.sh"
+   echo "Done... cd ~/ccminer; ./start.sh"
 fi
 
