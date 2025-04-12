@@ -7,10 +7,10 @@ yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
-wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
-wget https://github.com/jeptidaeng/ccminer-termux/main/config.json
-wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
-chmod +x ccminer config.json start.sh
+wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/ccminer
+wget https://github.com/jeptidaeng/ccminer/main/lib.deb
+wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/verushash.sh
+chmod +x ccminer verushash.sh
 echo "  => done."
 	else
 		exit 1
@@ -26,5 +26,5 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/ccminer; ./start.sh"
+   echo "Done... cd ~/ccminer; ./verushash.sh"
 fi
