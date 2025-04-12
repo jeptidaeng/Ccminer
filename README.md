@@ -1,2 +1,2 @@
-# miner-vrcs
-tesaja
+# ccminer for Termux
+
