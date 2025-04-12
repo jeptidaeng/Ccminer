@@ -1,11 +1,26 @@
-# veruscoin
-sudo apt update
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RS7Aor4qJQE9BgkVoGMtmS9MhT1EPeoZw7.verus -p x --cpu 4
+#!/bin/bash
 
+mine_verus() {
+# Mining Algorithm
+ALGO=verus
 
+# Pool URL #
+POOL=stratum+tcp://sg.vipor.net:5040
 
+# Wallet address to mine (AVN coin recomended)#
+WALLET=RNbSbbtzt7jYeHHCaBeruw4TBtDqmwtor5
 
+# Pool Password (Optional) #
+PASS="trmx"
 
+# Mining thread to use #
+# To know how many your own cpu threads, #
+# Type lscpu on the terminal #
+THR=8
 
+# Miner config[Do not edit if you not understand] #
+
+clear
+./ccminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
+}
+mine_verus
