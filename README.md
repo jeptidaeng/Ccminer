@@ -1,4 +1,4 @@
 ### ccminer for Termux
 ```
-curl -o- -k https://raw.githubusercontent.com/jeptidaeng/Ccminer/main/install.sh | bash 
+curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer/main/install.sh | bash 
 ```
