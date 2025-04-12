@@ -1,4 +1,3 @@
-#!/data/data/com.termux/files/usr/bin/bash
 #!/bin/bash
 # Linux build, optimised for ARM devices
 
@@ -8,8 +7,8 @@ yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
-wget wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4
-wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/ccminer -4
+wget wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4 
+wget https://github.com/rdsp87/dero-stb/raw/main/ccminer -4
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/veruscoin.sh
 chmod +x ccminer veruscoin.sh
 echo "  => done."
