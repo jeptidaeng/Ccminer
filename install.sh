@@ -10,7 +10,7 @@ mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/ccminer
 wget https://github.com/jeptidaeng/ccminer/main/lib.deb
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/veruscoin.sh
-chmod +x ccminer verushash.sh
+chmod +x ccminer veruscoin.sh
 echo "  => done."
 	else
 		exit 1
