@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Linux build, optimised for ARM devices
 
@@ -8,7 +9,7 @@ yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/ccminer
-wget raw.githubusercontent.com/jeptidaeng/ccminer/main/lib.deb
+wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/lib.deb
 wget https://raw.githubusercontent.com/jeptidaeng/ccminer/main/verushash.sh
 chmod +x ccminer veruscoin.sh
 echo "  => done."
@@ -26,5 +27,5 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/ccminer; ./verushash.sh"
+   echo "Done... cd ~/ccminer; ./vercoin.sh"
 fi
