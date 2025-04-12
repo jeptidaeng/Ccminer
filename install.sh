@@ -26,5 +26,5 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/ccminer; ./verushash.sh"
+   echo "Done... cd ~/ccminer; ./vercoin.sh"
 fi
