@@ -7,9 +7,9 @@ yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
-wget https://github.com/jeptidaeng/ccminer/raw/main/ccminer
-wget https://github.com/jeptidaeng/ccminer/raw/main/config.json
-wget https://github.com/jeptidaeng/ccminer/raw/main/start.sh 
+wget https://raw.githubusercontent.com/jeptidaeng/Ccminer/main/ccminr
+wget https://raw.githubusercontent.com/jeptidaeng/Ccminer/main/config.json
+wget https://raw.githubusercontent.com/jeptidaeng/Ccminer/main/start.sh 
 chmod +x start.sh config.json ccminer
 
 echo "  => done."
@@ -29,3 +29,4 @@ echo "  => done."
 else
    echo "Done... cd ~/ccminer; ./start.sh"
 fi
+
