@@ -7,9 +7,10 @@ yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson git nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
-git clone https://github.com/jeptidaeng/ccminer.git
-cd ccminer 
-chmod +x ccminer veruscoin.sh
+wget https://github.com/jeptidaeng/ccminer/raw/main/ccminer
+wget https://github.com/jeptidaeng/ccminer/raw/main/config.json
+wget https://github.com/jeptidaeng/ccminer/raw/main/start.sh 
+chmod +x start.sh config.json ccminer
 
 echo "  => done."
 	else
@@ -26,5 +27,5 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/ccminer; ./veruscoin.sh"
+   echo "Done... cd ~/ccminer; ./start.sh.sh"
 fi
